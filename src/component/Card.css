@@ -1,0 +1,69 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 30px;
+  }
+
+  .Radio{
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  Radio:checked {
+    height: 50px;
+    width: 50px;
+  }
+  .Btn{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .Centre{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  .Button{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    
+    justify-content: space-evenly;
+  
+  }
+
+  .Button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .column {
+    float: left;
+    width: 75%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width : 70%;
+    display: flexbox;
+    align-self: center;
+  }
