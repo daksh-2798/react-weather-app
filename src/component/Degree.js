@@ -11,7 +11,7 @@ const Degree = ({updateForecastDegree,degreeType}) => {
         name="degree-type"
         id="celsius"
         value="celsius"
-        checked={degreeType === 'celsius'}
+        checked={degreeType === "celsius"}
         onChange={updateForecastDegree}
         />
         <label  htmlFor="celsius">Celsius</label>
@@ -24,7 +24,7 @@ const Degree = ({updateForecastDegree,degreeType}) => {
         name="degree-type"
         id="farenheit"
         value="fahrenheit"
-        checked={degreeType === 'fahrenheit'} 
+        checked={degreeType === "fahrenheit"} 
         onChange={updateForecastDegree}
         />
         <label  htmlFor="farenheit">Farenheit</label>

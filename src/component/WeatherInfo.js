@@ -18,6 +18,7 @@ class WeatherInfo extends Component {
   }
 
   
+  
         componentDidMount = () =>{
             const urlapi =`http://api.openweathermap.org/data/2.5/forecast?q=Munich,de&APPID=75f972b80e26f14fe6c920aa6a85ad57&cnt=40`;
             axios.get(urlapi)
@@ -92,7 +93,7 @@ class WeatherInfo extends Component {
 
               
         render(){
-            let weatherinfo = <div className="card"> <p> Loading </p> </div>;
+            let weatherinfo = <div className="card"> <p> Loading Weather Data... </p> </div>;
             if(!this.state.loading){
             weatherinfo = (
             <div className="card">
