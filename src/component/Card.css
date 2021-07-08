@@ -47,7 +47,7 @@
     cursor: not-allowed;
   }
   
-  /* On mouse-over, add a deeper shadow */
+  
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -57,9 +57,9 @@
     padding: 0 10px;
   }
   
-  /* Remove extra left and right margins, due to padding in columns */
+  
   .row {margin: 0 -5px;}
-  /* Add some padding inside the card container */
+ 
   .container {
     padding: 2px 16px;
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
