@@ -14,10 +14,13 @@ const DayWeather = ({reading,degreeType}) => {
         <div className="row">
         <div className="column">
         <div className="container">
-        <h2>{moment(newDate).format('dddd')}</h2>
-        <h2>{moment(newDate).format('MMMM Do, h:mm a')}</h2>
+        
+        <h2>Temp:<br/>{degreeType === "celsius" ? celsius + "°C" : fahrenheit + "°F"}</h2>
+        <h3>{moment(newDate).format('MMMM Do')}</h3>
+        <h4>{moment(newDate).format('dddd')}</h4>
+        
         {/* <h3>{Math.round(reading.main.temp)} °F </h3> */}
-        <h4>{degreeType === "celsius" ? celsius + "°C" : fahrenheit + "°F"}</h4>
+        
         </div>
         </div>
         </div>
