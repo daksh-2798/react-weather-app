@@ -69,3 +69,15 @@
     display: flexbox;
     align-self: center;
   }
+
+  @media (max-with : 625 px){
+    .card{
+      max-width: 625px;
+    }
+    .column{
+      width : 50%
+    }
+    .container{
+      max-width: 100%;
+    }
+  }
