@@ -99,7 +99,7 @@ class WeatherInfo extends Component {
             <div className="card">
                 <h1 style={{margin: 0}}>Weather App</h1>
                 <h3>Munich</h3>
-                <div><Degree updateForecastDegree={e=>this.updateForecastDegree(e)}/></div>
+                <div><Degree degreeType={this.state.degreeType} updateForecastDegree={e=>this.updateForecastDegree(e)}/></div>
                 <div className="Btn">
                 <button className="Button" onClick={this.prevHandler} disabled={this.state.pageIndex === 0} >Prev</button>
                 <button className="Button" onClick={this.nextHandler} disabled={!(this.state.chunkedData[this.state.pageIndex + 1]) }>Next</button>
