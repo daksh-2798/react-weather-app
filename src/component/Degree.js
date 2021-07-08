@@ -10,7 +10,7 @@ const Degree = ({updateForecastDegree,degreeType}) => {
             name="degreetype"
             id="celsius"
             value="celsius"
-            checked={degreeType === "celsius"}
+            checked={degreeType === "celsius" }
             onChange={updateForecastDegree}
         />
         <label  htmlFor="celsius">Celsius</label>
@@ -20,13 +20,12 @@ const Degree = ({updateForecastDegree,degreeType}) => {
         <input
             type="radio"
             name="degreetype"
-            id="farenheit"
+            id="fahrenheit"
             value="fahrenheit"
             checked={degreeType === "fahrenheit"} 
             onChange={updateForecastDegree}
-        
         />
-        <label  htmlFor="farenheit">Farenheit</label>
+        <label  htmlFor="fahrenheit">Fahrenheit</label>
         </div>
       </div> </div >
     
